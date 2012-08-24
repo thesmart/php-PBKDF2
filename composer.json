@@ -1,0 +1,24 @@
+{
+	"name": "security/pbkdf2",
+	"type": "library",
+	"description": "An implementation of PBKDF2 invented by RSA Laboratories. Useful for password strengthening.",
+	"keywords": ["key/value","name/value","pairs","mongodb","memached"],
+	"homepage": "https://github.com/thesmart/php-stache",
+	"license": "MIT",
+	"authors": [
+		{
+		"name": "John Smart",
+		"email": "smartj@gmail.com",
+		"homepage": "https://twitter.com/thesmart",
+		"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0"
+	},
+	"autoload": {
+		"psr-0": {
+			"security": "lib/"
+		}
+	}
+}
