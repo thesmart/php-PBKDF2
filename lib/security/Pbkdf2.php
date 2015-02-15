@@ -55,8 +55,8 @@ TOKEN;
 	 * @param int $iterationCount	Optional. The number of times to run the operation (i.e. > 10000 times)
 	 * @return bool		Matches.
 	 */
-	public static function isMatch($password, $hash, $salt, $iterationCount = Pbkdf2::HASH_ITERATIONS) {
-		$hashExpected	= self::hash($password, $salt, $iterationCount);
+	public static function isMatch($password, $hash, $salt, $iterationCount = Pbkdf2::HASH_ITERATIONS, $secret = Pbkdf2::POMPOUS_SECRET) {
+		$hashExpected	= self::hash($password, $salt, $iterationCount, $secret);
 		return $hashExpected === $hash;
 	}
 
